@@ -1,3 +1,19 @@
+/* IBM Plex Mono (SIL Open Font License 1.1), self-hosted so no third-party request is needed. */
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/ibm-plex-mono-600.woff2") format("woff2");
+}
+
 /* Terminal-window theme: cool palette, window title bars, file-name labels. */
 
 :root {
