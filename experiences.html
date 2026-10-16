@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiences | Zhang Jingyi</title>
+  <meta name="description" content="Work experience, education and projects of Zhang Jingyi.">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="index.html">zhang-jingyi</a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="experiences.html" aria-current="page">Experiences</a>
+        <a href="contact.html">Contact</a>
+        <a class="lang-btn" href="zh/experiences.html" hreflang="zh-Hans" lang="zh-Hans" title="切换到中文">中文</a>
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <h1 class="page-title">Experiences</h1>
+    <p class="page-lead">Work, education and projects.</p>
+
+    <main>
+      <section id="experience" class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>experience.md</span></div>
+        <div class="window-body">
+          <h2><span class="code-comment">//</span> Work Experience</h2>
+          <h3>Tax Technology Transformation Associate · Ernst &amp; Young</h3>
+          <p class="meta">Apr 2024 – Jun 2026</p>
+
+          <p class="sub">Data pipeline &amp; platform architecture</p>
+          <ul>
+            <li>Engineered scalable Azure SQL stored procedures to clean, join and transform ERP data, implementing field mappings and tax reporting calculations.</li>
+            <li>Designed, built and deployed Azure Data Factory pipelines that orchestrate SQL transformations and load data into downstream tax reporting platforms via API with error logging, replacing manual Excel preparation.</li>
+            <li>Developed an interactive Power BI dashboard for data validation during UAT, checking the integrity and consistency of pipeline outputs for stakeholder review.</li>
+            <li>Delivered client training and troubleshooting documentation to support pipeline operation after go-live.</li>
+          </ul>
+
+          <p class="sub">AI-powered transaction classification tool</p>
+          <ul>
+            <li>Adapted an existing classification solution to Microsoft Azure, implementing a RAG workflow using Azure OpenAI embeddings and Azure AI Search for low-latency semantic vector retrieval.</li>
+            <li>Integrated GPT-4o as a reasoning layer to classify new transactions by historical contextual similarity, cutting manual classification time and effort by approximately <strong>80%</strong>.</li>
+          </ul>
+
+          <p class="sub">Client-facing project management</p>
+          <ul>
+            <li>Coordinated status tracking, timeline adherence, billing reconciliation, and executive meeting materials.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education" class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>education.md</span></div>
+        <div class="window-body">
+          <h2><span class="code-comment">//</span> Education</h2>
+          <ul>
+            <li><strong>National University of Singapore (NUS)</strong><br><span class="meta">Master of Computing in Artificial Intelligence · Aug 2026 – Dec 2027 (expected)</span><ul><li>Modules: Introduction to Large Language Models, Knowledge Discovery &amp; Data Mining, Database Security</li></ul></li>
+            <li><strong>Nanyang Technological University (NTU)</strong><br><span class="meta">B.Eng. Electrical and Electronic Engineering · Aug 2020 – Dec 2023</span><ul><li>Honours (Distinction), GPA 4.11 / 5.00</li><li>MOE Scholarship recipient</li><li>Specialisation: Info-communications Engineering (Data Intelligence and Processing)</li></ul></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="window">
+        <div class="window-bar"><i></i><i></i><i></i><span>projects.md</span></div>
+        <div class="window-body">
+          <h2><span class="code-comment">//</span> Projects</h2>
+          <div class="card">
+            <h3>Value Investing with Machine Learning</h3>
+            <p class="meta">NTU Final Year Project · Jan 2023 – Dec 2023</p>
+            <ul>
+            <li>Built an algorithm to analyse 10 years of financial data from Dow Jones 30 and S&amp;P 500 technology companies, covering over 80,000 data points, to surface value-investing opportunities.</li>
+            <li>Used Python with three machine learning models (LSTM, XGBoost, random forest) to predict intrinsic values and compare them with market prices, identifying the most suitable stocks.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>LSTM</span><span>XGBoost</span><span>Random Forest</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>/* © 2026 Zhang Jingyi */</footer>
+  </div>
+
+  <button id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <script src="site.js"></script>
+</body>
+</html>
